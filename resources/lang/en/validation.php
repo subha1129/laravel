@@ -102,9 +102,32 @@ return [
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
-        ],
     ],
-
+        'username' => [
+            'required' => 'Username is required',
+    ],
+        'username' => [
+            'min' => 'The field has to be 6 chars long!',
+    ],
+        'lastname' => [
+            'required' => 'This field required',
+    ],
+        'lastname' => [
+            'min' => 'The field has to be 6 chars long!',
+    ],
+        'email' => [
+            'unique' => 'This email is already exists',
+    ],
+        'email' => [
+            'required' => 'Email field is required',
+    ],
+        'email' => [
+            'email' => 'Enter valid email.....',
+    ],
+        
+    ],
+      
+   
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Attributes

@@ -18,11 +18,14 @@ Route::get('/', function () {
 //User Admin
 Route::get('/user', 'UserController@index');
 Route::get('user/{id}', 'UserController@show');
-Route::post('create', 'UserController@add');
+
+Route::post('create', 'ValidationController@add');
+
+
 Route::put('update/{id}','UserController@update');
 Route::delete('delete/{id}', 'UserController@deleteuser');
 //login
-Route::post('createlogin', 'UserController@createlogin');
+Route::post('User', 'UserController@createUser');
 Route::post('login', 'UserController@userlogin');
 //user Role
 Route::Post('role','UserController@addrole');
